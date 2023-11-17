@@ -11,30 +11,20 @@
 <body>
     <div class="container">
         <h1 class="heading">Rock Paper scissors</h1>
-        <button onclick="
-        playGame('rock');
-        " class="move-button"><img src="/picture/rock-emoji (1).png" class="move-icon"></button>
+        <button class="move-button js-rock-button"><img src="/picture/rock-emoji (1).png" class="move-icon"></button>
 
-        <button onclick="
-        playGame('paper');
-        " class="move-button"><img src="/picture/paper-emoji (1).png" class="move-icon" ></button>
+        <button class="move-button js-paper-button"><img src="/picture/paper-emoji (1).png" class="move-icon" ></button>
 
-        <button onclick="
-        playGame('scissors');
-        " class="move-button"><img src="/picture/scissors-emoji (1).png" class="move-icon" ></button>
+        <button class="move-button js-scissor-button"><img src="/picture/scissors-emoji (1).png" class="move-icon" ></button>
         <div class="udjust">
             <p class="js-result result"></p>
             <p class="js-moves">
             </p>
             <p class="js-score score"></p>
 
-            <button class="reset" onclick="
-            score.wins = 0;
-            score.losses = 0;
-            score.ties = 0;
-            localStorage.removeItem('score');
-            updateScoreElement();
-            ">Reset Score</button>
+            <button class="reset js-reset-button">Reset Score</button>
+            <button class="auto-play">Auto Play</button>
+            <p class="js-reset-confirmation"></p>
         </div>
     </div>
 

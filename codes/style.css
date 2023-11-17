@@ -54,7 +54,9 @@
      margin-left: 50px;
  }
  
- .reset {
+ .reset,
+ .auto-play,
+ .reset-confirm-button {
      padding: 10px 20px;
      font-weight: bold;
      border: none;
@@ -64,6 +66,17 @@
      transition: opacity 0.25s;
  }
  
- .reset:active {
+ .reset:active,
+ .auto-play:active,
+ .reset-confirm-button:active {
      opacity: 0.7;
+ }
+ 
+ .reset-confirm-button {
+     margin-left: 10px;
+ }
+ 
+ .js-reset-confirmation {
+     color: white;
+     font-weight: bold;
  }
